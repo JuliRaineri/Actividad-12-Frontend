@@ -148,20 +148,40 @@ li{
     left: -10%;
     width: 40%;
     height: 80%;
-    top: 10;
+    top: 0;
     background: rgb(120, 196, 120);
     box-shadow: 3px 0px black;
     transition: all 300ms linear;
 }
 
-.menu-expandible:focus{
+.menu-expandible:focus {
+    
     background-color: red;
 }
 
-
-
-.menu-expandible:focus + .contenido-menu{
+ .menu-expandible:hover  .contenido-menu {
     left: 0;
     box-shadow: 3px 3px 10px black;
 }
 
+
+.apps-herramientas{
+    display: none;
+    position: absolute;
+}
+
+.boton-apps{
+    display: block;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-apps :focus{
+    border-radius: 50%;
+    background-color: white;
+}
+
+.menu-expandible :focus + .apps-herramientas{
+     display: block;
+}
