@@ -169,16 +169,23 @@ li{
 .apps-herramientas{
     display: none;
     position: absolute;
+    background-color: white;
+    height: 328px;
+    width: 348px;
+    border: 1px solid black;
+    left: 0;
+    overflow: auto;
+    
 }
 
 .boton-apps{
-    display: block;
+    display: flex;
     padding: 5px;
     justify-content: center;
     align-items: center;
 }
 
-.boton-apps :focus{
+.boton-apps:focus{
     border-radius: 50%;
     background-color: white;
 }
@@ -186,3 +193,30 @@ li{
 .boton-apps:focus + .apps-herramientas{
      display: block;
 }
+
+.apps-herramientas ul{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+row-gap: 20px;   
+column-gap: 10px;
+ list-style: none;
+    
+    
+}
+
+.apps-herramientas ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.apps-herramientas ul li img{
+    width: 48px;
+    height: 48px;
+    display: block;
+
+}
+
