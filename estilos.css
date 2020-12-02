@@ -43,7 +43,7 @@ header, .menu-superior {
 
 .imagen-miniatura {
     width: 32px;
-    height: 32px;
+    height: 31px;
 }
 .main{
     display: flex;
@@ -159,7 +159,8 @@ li{
     background-color: red;
 }
 
- .menu-expandible:hover  .contenido-menu {
+ .menu-expandible:focus +  .contenido-menu {
+     display: block;
     left: 0;
     box-shadow: 3px 3px 10px black;
 }
@@ -182,6 +183,6 @@ li{
     background-color: white;
 }
 
-.menu-expandible :focus + .apps-herramientas{
+.boton-apps:focus + .apps-herramientas{
      display: block;
 }
